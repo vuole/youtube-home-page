@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Boxicons CSS -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>YouTube</title>
+  </head>
+  <body>
+    <header id="header" class="flex-center">
+      <span id="back-arrow-icon" class="icon-box none-icon">
+        <i class="bx bx-arrow-back icon"></i>
+      </span>
+
+      <div id="start" class="flex-center">
+        <span id="toggle" class="icon-box">
+          <i class="bx bx-menu icon"></i>
+        </span>
+        <span id="ytb-logo" class="flex-center">
+          <img src="./logo.png" alt="" />
+        </span>
+      </div>
+
+      <div id="center">
+        <span id="search-icon" class="icon-box none-icon">
+          <i class="bx bx-search icon"></i>
+        </span>
+
+        <div id="search-container">
+          <span class="search-input flex-center">
+            <input type="text" placeholder="Tìm kiếm" />
+            <span id="keyboard-icon" class="flex-center">
+              <i class="bx bxs-keyboard icon"></i>
+            </span>
+          </span>
+
+          <button class="search-box-button flex-center">
+            <i class="bx bx-search icon"></i>
+          </button>
+        </div>
+
+        <span id="voice-search-button" class="icon-box">
+          <i class="bx bxs-microphone icon"></i>
+        </span>
+      </div>
+
+      <div id="end">
+        <div class="left"></div>
+        <div class="right">
+          <span class="icon-box">
+            <i class="bx bx-video-plus icon"></i>
+          </span>
+          <span class="icon-box">
+            <i class="bx bx-bell icon"></i>
+          </span>
+          <span id="user-avatar" class="avatar-icon-box flex-center">
+            <i class="bx bxs-user-circle icon"></i>
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <div id="scrim"></div>
+
+    <nav id="sidebar" class="close2">
+      <div class="large-sidebar">
+        <header id="sidebar-header">
+          <span id="sidebar-toggle" class="icon-box">
+            <i class="bx bx-menu icon"></i>
+          </span>
+          <span id="ytb-logo" class="flex-center">
+            <img src="./logo.png" alt="" />
+          </span>
+        </header>
+
+        <div id="sections">
+          <div class="menu-links">
+            <li class="nav-link selected">
+              <a href="#">
+                <i class="bx bxs-home icon"></i>
+                <span class="text nav-text">Trang chủ</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bxl-tiktok icon"></i>
+                <span class="text nav-text">Shorts</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-registered icon"></i>
+                <span class="text nav-text">Kênh đăng ký</span>
+              </a>
+            </li>
+
+            <ul class="menu-links-box">
+              <li class="nav-link">
+                <a href="#">
+                  <i class="bx bx-movie-play icon"></i>
+                  <span class="text nav-text">Thư viện</span>
+                </a>
+              </li>
+              <li class="nav-link">
+                <a href="#">
+                  <i class="bx bx-time icon"></i>
+                  <span class="text nav-text">Video đã xem</span>
+                </a>
+              </li>
+              <li class="nav-link">
+                <a href="#">
+                  <i class="bx bx-time-five icon"></i>
+                  <span class="text nav-text">Xem sau</span>
+                </a>
+              </li>
+              <li class="nav-link">
+                <a href="#">
+                  <i class="bx bx-like icon"></i>
+                  <span class="text nav-text">Video đã thích</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div id="register" class="menu-links">
+            <h4 class="section-name">Kênh đăng ký</h4>
+            <li class="nav-link">
+              <a href="#">
+                <img
+                  src="https://yt3.googleusercontent.com/cfpW83i5yoWeevAFdmW7hiyzIccHQMTtjNMGm84vVv6SalXZA9PZUXRwbGdpXZapwnZ7-sNKNQ=s176-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="icon"
+                />
+                <span class="text nav-text">KIẾN THỨC THÚ VỊ</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <img
+                  src="https://yt3.googleusercontent.com/ytc/AGIKgqNWdIvQjoQtymkt1l8_2P_sUQeBRdpoJ1M7bL2t=s176-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="icon"
+                />
+                <span class="text nav-text">The Present Writer</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <img
+                  src="https://yt3.googleusercontent.com/Ko0fuHgL_C9WES-HHO0xfsuhZMrqlaFvo6hGOV33_Va_EmTHJ1Dvb_pgWa2bQq67VPQ3KNe4og=s176-c-k-c0x00ffffff-no-rj"
+                  alt=""
+                  class="icon"
+                />
+                <span class="text nav-text">Ms Hoa TOEIC Official</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-plus-circle icon"></i>
+                <span class="text nav-text">Xem qua các kênh</span>
+              </a>
+            </li>
+          </div>
+
+          <div class="menu-links">
+            <h4 class="section-name">Khám phá</h4>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bxs-hot icon"></i>
+                <span class="text nav-text">Thịnh hành</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-music icon"></i>
+                <span class="text nav-text">Âm nhạc</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-game icon"></i>
+                <span class="text nav-text">Trò chơi</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bxs-news icon"></i>
+                <span class="text nav-text">Tin tức</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-walk icon"></i>
+                <span class="text nav-text">Thể thao</span>
+              </a>
+            </li>
+          </div>
+
+          <div class="menu-links">
+            <h4 class="section-name">Dịch vụ khác của YouTube</h4>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bxl-youtube icon"></i>
+                <span class="text nav-text">YouTube Premium</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bxl-youtube icon"></i>
+                <span class="text nav-text">YouTube Music</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bxl-youtube icon"></i>
+                <span class="text nav-text">YouTube Kids</span>
+              </a>
+            </li>
+          </div>
+
+          <div class="menu-links">
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-cog icon"></i>
+                <span class="text nav-text">Cài đặt</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-flag icon"></i>
+                <span class="text nav-text">Nhật ký báo cáo</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-question-mark icon"></i>
+                <span class="text nav-text">Trợ giúp</span>
+              </a>
+            </li>
+            <li class="nav-link">
+              <a href="#">
+                <i class="bx bx-chat icon"></i>
+                <span class="text nav-text">Gửi ý kiến phải hồi</span>
+              </a>
+            </li>
+          </div>
+
+          <footer class="footer">
+            <div class="footer-primary">
+              <a href="">Giới thiệu</a>
+              <a href="">Báo chí</a>
+              <a href="">Bản quyền</a>
+              <a href="">Liên hệ với chúng tôi</a>
+              <a href="">Người sáng tạo</a>
+              <a href="">Quảng cáo</a>
+              <a href="">Nhà phát triển</a>
+            </div>
+            <div class="footer-secondary">
+              <a href="">Điều khoản</a>
+              <a href="">Quyền riêng tư</a>
+              <a href="">Chính sách và điều khoản</a>
+              <a href="">Cách YouTube hoạt động</a>
+              <a href="">Thử các tính năng mới</a>
+            </div>
+            <div class="copyright">© 2023 Google LLC</div>
+          </footer>
+        </div>
+      </div>
+      <div class="small-sidebar">
+        <li class="nav-link">
+          <a href="#">
+            <i class="bx bxs-home icon"></i>
+            <span class="text nav-text">Trang chủ</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="#">
+            <i class="bx bxl-tiktok icon"></i>
+            <span class="text nav-text">Shorts</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="#">
+            <i class="bx bx-registered icon"></i>
+            <span class="text nav-text">Kênh đăng ký</span>
+          </a>
+        </li>
+        <li class="nav-link">
+          <a href="#">
+            <i class="bx bx-movie-play icon"></i>
+            <span class="text nav-text">Thư viện</span>
+          </a>
+        </li>
+      </div>
+    </nav>
+
+    <section id="home" class="home-container">
+      <nav id="chips">
+        <div id="gradient-left-button" class="gradient-button none-icon">
+          <div class="icon-container">
+            <span class="icon-box">
+              <i class="bx bx-chevron-left icon"></i>
+            </span>
+          </div>
+        </div>
+        <div id="gradient-right-button" class="gradient-button none-icon">
+          <div class="icon-container">
+            <span class="icon-box">
+              <i class="bx bx-chevron-right icon"></i>
+            </span>
+          </div>
+        </div>
+        <div class="chips-container">
+          <span class="chip-item selected">Tất cả</span>
+          <span class="chip-item">Âm nhạc</span>
+          <span class="chip-item">Danh sách kết hợp</span>
+          <span class="chip-item">Trò chơi</span>
+
+          <span class="chip-item">Trực tiếp</span>
+          <span class="chip-item">Bóng đá</span>
+          <span class="chip-item">Mới tải lên gần đây</span>
+          <span class="chip-item">Đã xem</span>
+          <span class="chip-item">Đề xuất mới</span>
+        </div>
+      </nav>
+      <div class="videos-container">
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/ruBfH97rPHI/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AGIKgqMkOOIxsMl8kzp3M2uOaIOE04gXaaUtZZocazxydkY=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title">
+                MCK bất ngờ xuất hiện tại casting khiến Suboi, JustaTee và ngàn
+                thí sinh ú òa| Rap Việt Mùa 3 (2023)
+              </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href=""> Vie Channel - HTV2 </a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">228 N lượt xem</span>
+                  <span class="time">1 tháng trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box">
+              <i class="bx bx-dots-vertical-rounded icon-more"></i>
+            </span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/o8bFdaKvwOs/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AGIKgqPzm-33isVI7_lm_-qJTP5_nGz_oc2Y9XaiVofE=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title">
+                ♩ Cưng Chiều Che Chở | 宠护 - Vương Lý Văn | Lyrics [Kara +
+                Vietsub] ♩
+              </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href="">Bánh Bột</a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">3,5 Tr lượt xem</span>
+                  <span class="time">4 năm trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/Zp6sYF9ssx8/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AGIKgqMkOOIxsMl8kzp3M2uOaIOE04gXaaUtZZocazxydkY=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title">
+                NALA Tập 2 - UWU, anh chính là Soda kem ngon xoắn lưỡi hơn người
+                iu cũ đấy | Người Ấy Là Ai? 2022
+              </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href=""> Vie Channel - HTV2 </a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">9.6 Tr lượt xem</span>
+                  <span class="time">1 năm trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/iTuQ2Rg_FS8/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AGIKgqP2ZDMDaAb547oJ7sq1Np9MxCgCqTkKglqFJ1afFg=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title">
+                Người Cuối Cùng Ngừng Ăn Sashimi Sushi Cá Hồi sẽ Thắng 10 Triệu
+                - Phần 2
+              </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href="">Lâm Vlog</a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">944 N lượt xem</span>
+                  <span class="time">10 giờ trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/jxkfr0hCdpc/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/t_BaUiKRMv_PgAdpZsjbbiykoUccH6WoHljjriU0GwpBriz5uzQIzGfHk0RcnsmXRPhK-7FAFg=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title">
+                Người VIỆT Nhỏ Bé Có Thể Vượt Qua Được Bài Kiểm Tra Thể Lực Của
+                QUÂN ĐỘI NGA Không??? | THẾ DÂN
+              </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href="">THẾ DÂN - THE DAN</a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">695 N lượt xem</span>
+                  <span class="time">1 năm trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/UgiuRwn8JeI/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/5TB-USYWmuc-AhmFyBpC9eB0oHFPRFxi2bDjGPcTV8IBkwyPqPmwtSMkHXKm31ybZSmC1dDXfg=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title">
+                I Like You So Much, You’ll Know It (我多喜欢你, 你会知道
+                English) - A Love So Beautiful OST [VALERIE POLA]
+              </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href="">Valerie Pola</a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">7.1 Tr lượt xem</span>
+                  <span class="time">2 năm trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/kwg4ZMEsSBg/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/7Lbor0bY3mE9oarI7p6wnuAbGX_Nx0cYzYgp8dZvQwtmaAe5jr1MfTOhDqrJwbkpX6qxMv4=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title"> Cách Luyện KIÊN TRÌ Học tiếng Anh </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href="">AlexD Music Insight</a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">5.2 N lượt xem</span>
+                  <span class="time">9 giờ trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/ruBfH97rPHI/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AGIKgqMkOOIxsMl8kzp3M2uOaIOE04gXaaUtZZocazxydkY=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title">
+                MCK bất ngờ xuất hiện tại casting khiến Suboi, JustaTee và ngàn
+                thí sinh ú òa| Rap Việt Mùa 3 (2023)
+              </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href=""> Vie Channel - HTV2 </a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">228 N lượt xem</span>
+                  <span class="time">1 tháng trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/o8bFdaKvwOs/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AGIKgqPzm-33isVI7_lm_-qJTP5_nGz_oc2Y9XaiVofE=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title">
+                ♩ Cưng Chiều Che Chở | 宠护 - Vương Lý Văn | Lyrics [Kara +
+                Vietsub] ♩
+              </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href="">Bánh Bột</a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">3,5 Tr lượt xem</span>
+                  <span class="time">4 năm trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/Zp6sYF9ssx8/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AGIKgqMkOOIxsMl8kzp3M2uOaIOE04gXaaUtZZocazxydkY=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title">
+                NALA Tập 2 - UWU, anh chính là Soda kem ngon xoắn lưỡi hơn người
+                iu cũ đấy | Người Ấy Là Ai? 2022
+              </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href=""> Vie Channel - HTV2 </a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">9.6 Tr lượt xem</span>
+                  <span class="time">1 năm trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/iTuQ2Rg_FS8/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/ytc/AGIKgqP2ZDMDaAb547oJ7sq1Np9MxCgCqTkKglqFJ1afFg=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title">
+                Người Cuối Cùng Ngừng Ăn Sashimi Sushi Cá Hồi sẽ Thắng 10 Triệu
+                - Phần 2
+              </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href="">Lâm Vlog</a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">944 N lượt xem</span>
+                  <span class="time">10 giờ trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/jxkfr0hCdpc/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/t_BaUiKRMv_PgAdpZsjbbiykoUccH6WoHljjriU0GwpBriz5uzQIzGfHk0RcnsmXRPhK-7FAFg=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title">
+                Người VIỆT Nhỏ Bé Có Thể Vượt Qua Được Bài Kiểm Tra Thể Lực Của
+                QUÂN ĐỘI NGA Không??? | THẾ DÂN
+              </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href="">THẾ DÂN - THE DAN</a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">695 N lượt xem</span>
+                  <span class="time">1 năm trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/UgiuRwn8JeI/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/5TB-USYWmuc-AhmFyBpC9eB0oHFPRFxi2bDjGPcTV8IBkwyPqPmwtSMkHXKm31ybZSmC1dDXfg=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title">
+                I Like You So Much, You’ll Know It (我多喜欢你, 你会知道
+                English) - A Love So Beautiful OST [VALERIE POLA]
+              </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href="">Valerie Pola</a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">7.1 Tr lượt xem</span>
+                  <span class="time">2 năm trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+
+        <div class="video-item">
+          <a href="#" class="video-thumbnail">
+            <img
+              src="https://i3.ytimg.com/vi/kwg4ZMEsSBg/maxresdefault.jpg"
+              alt=""
+          /></a>
+          <div class="details">
+            <a href="#" class="channel-avatar">
+              <img
+                src="https://yt3.googleusercontent.com/7Lbor0bY3mE9oarI7p6wnuAbGX_Nx0cYzYgp8dZvQwtmaAe5jr1MfTOhDqrJwbkpX6qxMv4=s176-c-k-c0x00ffffff-no-rj"
+                alt=""
+              />
+            </a>
+            <div class="meta">
+              <a href="#" class="title"> Cách Luyện KIÊN TRÌ Học tiếng Anh </a>
+              <div class="info">
+                <div class="channel-name">
+                  <a href="">AlexD Music Insight</a>
+                  <i class="bx bxs-check-circle"></i>
+                </div>
+                <div class="view-and-time">
+                  <span class="view">5.2 N lượt xem</span>
+                  <span class="time">9 giờ trước</span>
+                </div>
+              </div>
+            </div>
+            <span class="icon-box"
+              ><i class="bx bx-dots-vertical-rounded icon-more"></i
+            ></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Script -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>
